@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E48353E23CDAFEC00B5C711 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48353D23CDAFEC00B5C711 /* AppDelegate.m */; };
+		4E48354123CDAFEC00B5C711 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48354023CDAFEC00B5C711 /* SceneDelegate.m */; };
+		4E48354423CDAFEC00B5C711 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48354323CDAFEC00B5C711 /* ViewController.m */; };
+		4E48354723CDAFEC00B5C711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E48354523CDAFEC00B5C711 /* Main.storyboard */; };
+		4E48354923CDAFF000B5C711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E48354823CDAFF000B5C711 /* Assets.xcassets */; };
+		4E48354C23CDAFF000B5C711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E48354A23CDAFF000B5C711 /* LaunchScreen.storyboard */; };
+		4E48354F23CDAFF000B5C711 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48354E23CDAFF000B5C711 /* main.m */; };
+		4E48355923CDAFF000B5C711 /* BrainWaveDrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48355823CDAFF000B5C711 /* BrainWaveDrawTests.m */; };
+		4E48356423CDAFF000B5C711 /* BrainWaveDrawUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48356323CDAFF000B5C711 /* BrainWaveDrawUITests.m */; };
+		4E48357223CDB06B00B5C711 /* SportLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E48357123CDB06B00B5C711 /* SportLineView.xib */; };
+		4E48357523CDB09F00B5C711 /* SportLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E48357423CDB09F00B5C711 /* SportLineView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E48355523CDAFF000B5C711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E48353123CDAFEC00B5C711 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E48353823CDAFEC00B5C711;
+			remoteInfo = BrainWaveDraw;
+		};
+		4E48356023CDAFF000B5C711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E48353123CDAFEC00B5C711 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E48353823CDAFEC00B5C711;
+			remoteInfo = BrainWaveDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E48353923CDAFEC00B5C711 /* BrainWaveDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainWaveDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E48353C23CDAFEC00B5C711 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E48353D23CDAFEC00B5C711 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E48353F23CDAFEC00B5C711 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4E48354023CDAFEC00B5C711 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4E48354223CDAFEC00B5C711 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E48354323CDAFEC00B5C711 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E48354623CDAFEC00B5C711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E48354823CDAFF000B5C711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E48354B23CDAFF000B5C711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E48354D23CDAFF000B5C711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E48354E23CDAFF000B5C711 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E48355423CDAFF000B5C711 /* BrainWaveDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainWaveDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E48355823CDAFF000B5C711 /* BrainWaveDrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainWaveDrawTests.m; sourceTree = "<group>"; };
+		4E48355A23CDAFF000B5C711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E48355F23CDAFF000B5C711 /* BrainWaveDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainWaveDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E48356323CDAFF000B5C711 /* BrainWaveDrawUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrainWaveDrawUITests.m; sourceTree = "<group>"; };
+		4E48356523CDAFF000B5C711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E48357123CDB06B00B5C711 /* SportLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportLineView.xib; sourceTree = "<group>"; };
+		4E48357323CDB09F00B5C711 /* SportLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SportLineView.h; sourceTree = "<group>"; };
+		4E48357423CDB09F00B5C711 /* SportLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportLineView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E48353623CDAFEC00B5C711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355123CDAFF000B5C711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355C23CDAFF000B5C711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E48353023CDAFEC00B5C711 = {
+			isa = PBXGroup;
+			children = (
+				4E48353B23CDAFEC00B5C711 /* BrainWaveDraw */,
+				4E48355723CDAFF000B5C711 /* BrainWaveDrawTests */,
+				4E48356223CDAFF000B5C711 /* BrainWaveDrawUITests */,
+				4E48353A23CDAFEC00B5C711 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E48353A23CDAFEC00B5C711 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E48353923CDAFEC00B5C711 /* BrainWaveDraw.app */,
+				4E48355423CDAFF000B5C711 /* BrainWaveDrawTests.xctest */,
+				4E48355F23CDAFF000B5C711 /* BrainWaveDrawUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E48353B23CDAFEC00B5C711 /* BrainWaveDraw */ = {
+			isa = PBXGroup;
+			children = (
+				4E48353C23CDAFEC00B5C711 /* AppDelegate.h */,
+				4E48353D23CDAFEC00B5C711 /* AppDelegate.m */,
+				4E48353F23CDAFEC00B5C711 /* SceneDelegate.h */,
+				4E48354023CDAFEC00B5C711 /* SceneDelegate.m */,
+				4E48354223CDAFEC00B5C711 /* ViewController.h */,
+				4E48354323CDAFEC00B5C711 /* ViewController.m */,
+				4E48354523CDAFEC00B5C711 /* Main.storyboard */,
+				4E48354823CDAFF000B5C711 /* Assets.xcassets */,
+				4E48354A23CDAFF000B5C711 /* LaunchScreen.storyboard */,
+				4E48354D23CDAFF000B5C711 /* Info.plist */,
+				4E48354E23CDAFF000B5C711 /* main.m */,
+				4E48357123CDB06B00B5C711 /* SportLineView.xib */,
+				4E48357323CDB09F00B5C711 /* SportLineView.h */,
+				4E48357423CDB09F00B5C711 /* SportLineView.m */,
+			);
+			path = BrainWaveDraw;
+			sourceTree = "<group>";
+		};
+		4E48355723CDAFF000B5C711 /* BrainWaveDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E48355823CDAFF000B5C711 /* BrainWaveDrawTests.m */,
+				4E48355A23CDAFF000B5C711 /* Info.plist */,
+			);
+			path = BrainWaveDrawTests;
+			sourceTree = "<group>";
+		};
+		4E48356223CDAFF000B5C711 /* BrainWaveDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E48356323CDAFF000B5C711 /* BrainWaveDrawUITests.m */,
+				4E48356523CDAFF000B5C711 /* Info.plist */,
+			);
+			path = BrainWaveDrawUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E48353823CDAFEC00B5C711 /* BrainWaveDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E48356823CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDraw" */;
+			buildPhases = (
+				4E48353523CDAFEC00B5C711 /* Sources */,
+				4E48353623CDAFEC00B5C711 /* Frameworks */,
+				4E48353723CDAFEC00B5C711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrainWaveDraw;
+			productName = BrainWaveDraw;
+			productReference = 4E48353923CDAFEC00B5C711 /* BrainWaveDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E48355323CDAFF000B5C711 /* BrainWaveDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E48356B23CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDrawTests" */;
+			buildPhases = (
+				4E48355023CDAFF000B5C711 /* Sources */,
+				4E48355123CDAFF000B5C711 /* Frameworks */,
+				4E48355223CDAFF000B5C711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E48355623CDAFF000B5C711 /* PBXTargetDependency */,
+			);
+			name = BrainWaveDrawTests;
+			productName = BrainWaveDrawTests;
+			productReference = 4E48355423CDAFF000B5C711 /* BrainWaveDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E48355E23CDAFF000B5C711 /* BrainWaveDrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E48356E23CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDrawUITests" */;
+			buildPhases = (
+				4E48355B23CDAFF000B5C711 /* Sources */,
+				4E48355C23CDAFF000B5C711 /* Frameworks */,
+				4E48355D23CDAFF000B5C711 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E48356123CDAFF000B5C711 /* PBXTargetDependency */,
+			);
+			name = BrainWaveDrawUITests;
+			productName = BrainWaveDrawUITests;
+			productReference = 4E48355F23CDAFF000B5C711 /* BrainWaveDrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E48353123CDAFEC00B5C711 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "吴伟";
+				TargetAttributes = {
+					4E48353823CDAFEC00B5C711 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					4E48355323CDAFF000B5C711 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4E48353823CDAFEC00B5C711;
+					};
+					4E48355E23CDAFF000B5C711 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4E48353823CDAFEC00B5C711;
+					};
+				};
+			};
+			buildConfigurationList = 4E48353423CDAFEC00B5C711 /* Build configuration list for PBXProject "BrainWaveDraw" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E48353023CDAFEC00B5C711;
+			productRefGroup = 4E48353A23CDAFEC00B5C711 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E48353823CDAFEC00B5C711 /* BrainWaveDraw */,
+				4E48355323CDAFF000B5C711 /* BrainWaveDrawTests */,
+				4E48355E23CDAFF000B5C711 /* BrainWaveDrawUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E48353723CDAFEC00B5C711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E48354C23CDAFF000B5C711 /* LaunchScreen.storyboard in Resources */,
+				4E48357223CDB06B00B5C711 /* SportLineView.xib in Resources */,
+				4E48354923CDAFF000B5C711 /* Assets.xcassets in Resources */,
+				4E48354723CDAFEC00B5C711 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355223CDAFF000B5C711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355D23CDAFF000B5C711 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E48353523CDAFEC00B5C711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E48354423CDAFEC00B5C711 /* ViewController.m in Sources */,
+				4E48353E23CDAFEC00B5C711 /* AppDelegate.m in Sources */,
+				4E48357523CDB09F00B5C711 /* SportLineView.m in Sources */,
+				4E48354F23CDAFF000B5C711 /* main.m in Sources */,
+				4E48354123CDAFEC00B5C711 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355023CDAFF000B5C711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E48355923CDAFF000B5C711 /* BrainWaveDrawTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E48355B23CDAFF000B5C711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E48356423CDAFF000B5C711 /* BrainWaveDrawUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E48355623CDAFF000B5C711 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E48353823CDAFEC00B5C711 /* BrainWaveDraw */;
+			targetProxy = 4E48355523CDAFF000B5C711 /* PBXContainerItemProxy */;
+		};
+		4E48356123CDAFF000B5C711 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E48353823CDAFEC00B5C711 /* BrainWaveDraw */;
+			targetProxy = 4E48356023CDAFF000B5C711 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E48354523CDAFEC00B5C711 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E48354623CDAFEC00B5C711 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E48354A23CDAFF000B5C711 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E48354B23CDAFF000B5C711 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E48356623CDAFF000B5C711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E48356723CDAFF000B5C711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E48356923CDAFF000B5C711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E48356A23CDAFF000B5C711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E48356C23CDAFF000B5C711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainWaveDraw.app/BrainWaveDraw";
+			};
+			name = Debug;
+		};
+		4E48356D23CDAFF000B5C711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainWaveDraw.app/BrainWaveDraw";
+			};
+			name = Release;
+		};
+		4E48356F23CDAFF000B5C711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrainWaveDraw;
+			};
+			name = Debug;
+		};
+		4E48357023CDAFF000B5C711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9APN2JJ9C;
+				INFOPLIST_FILE = BrainWaveDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ww.BrainWaveDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrainWaveDraw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E48353423CDAFEC00B5C711 /* Build configuration list for PBXProject "BrainWaveDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E48356623CDAFF000B5C711 /* Debug */,
+				4E48356723CDAFF000B5C711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E48356823CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E48356923CDAFF000B5C711 /* Debug */,
+				4E48356A23CDAFF000B5C711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E48356B23CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E48356C23CDAFF000B5C711 /* Debug */,
+				4E48356D23CDAFF000B5C711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E48356E23CDAFF000B5C711 /* Build configuration list for PBXNativeTarget "BrainWaveDrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E48356F23CDAFF000B5C711 /* Debug */,
+				4E48357023CDAFF000B5C711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E48353123CDAFEC00B5C711 /* Project object */;
+}
