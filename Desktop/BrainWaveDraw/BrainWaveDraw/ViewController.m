@@ -5,7 +5,7 @@
 //  Created by 吴伟 on 2020/1/14.
 //  Copyright © 2020 吴伟. All rights reserved.
 //
-static i=0;
+static int i=0;
 #import "ViewController.h"
 #import "SportLineView.h"
 @interface ViewController ()
@@ -25,8 +25,12 @@ static i=0;
     self.LCView=[SportLineView lineChartViewWithFrame:frame];
     self.LCView.xValues=@[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10];
     self.LCView.yValues=@[@10,@20,@30,@40,@50,@60,@70,@80,@90,@100];
+    self.LCView.countOfLines=3;
     self.LCView.type=QuadrilateralType;
     self.LCView.isShowLine=YES;
+    [self.LCView.colorOfLines addObject:[UIColor redColor]];
+    [self.LCView.colorOfLines addObject:[UIColor blueColor]];
+    [self.LCView.colorOfLines addObject:[UIColor greenColor]];
     [_LCView drawChartWithLineChart];
     [self.view addSubview:self.LCView];
 }
@@ -35,27 +39,40 @@ static i=0;
        [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
     //[self updateTest];
 }
-- (void)updatePoints:(NSValue *)pointObj1{
-    [self.LCView.pointArray addObject:pointObj1];
-    int x=[pointObj1 CGPointValue].x;
-    for(int i=0;i<self.LCView.pointArray.count;i++){
-        NSValue *pointObj=self.LCView.pointArray[i];
+- (void)updatePoints:(NSMutableArray *)pointObjs{
+    int j=0;
+    for(NSMutableArray *pointArray in self.LCView.AllLinePointsArray){
+        [pointArray addObject:pointObjs[j]];
+    int x=[pointObjs[j] CGPointValue].x;
+    for(int i=0;i<pointArray.count;i++){
+        NSValue *pointObj=pointArray[i];
         CGPoint pointRestored=[pointObj CGPointValue];
         if(x>_LCView.xValues.count){
             if(pointRestored.x<(x-_LCView.xValues.count)){
-                [_LCView.pointArray removeObject:pointObj];
+                [pointArray removeObject:pointObj];
             }
             
         }
     }
+        j++;
+    }
     [_LCView exchangeLineAnyTime];
 }
 -(void)updateTest{
-        int value=arc4random_uniform(101);
-        CGPoint point=CGPointMake(i,value);
-        NSValue *pointObj=[NSValue valueWithCGPoint:point];
-        [self updatePoints:pointObj];
-        NSLog(@"%d %d",i,value);
+        int value1=arc4random_uniform(101);
+    int value2=arc4random_uniform(101);
+    int value3=arc4random_uniform(101);
+        CGPoint point1=CGPointMake(i,value1);
+    CGPoint point2=CGPointMake(i, value2);
+    CGPoint point3=CGPointMake(i, value3);
+        NSValue *pointObj1=[NSValue valueWithCGPoint:point1];
+    NSValue *pointObj2=[NSValue valueWithCGPoint:point2];
+    NSValue *pointObj3=[NSValue valueWithCGPoint:point3];
+    NSMutableArray *pointsArray=[NSMutableArray array];
+    [pointsArray addObject:pointObj1];
+    [pointsArray addObject:pointObj2];
+    [pointsArray addObject:pointObj3];
+    [self updatePoints:pointsArray];
         i++;
 }
 

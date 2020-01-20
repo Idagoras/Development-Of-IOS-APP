@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
--(void)updatePoints:(NSValue*)pointObj;
+-(void)updatePoints:(NSMutableArray *)pointObjs;
 
 @end
 

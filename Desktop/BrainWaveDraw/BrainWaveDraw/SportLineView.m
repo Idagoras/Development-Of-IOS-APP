@@ -100,7 +100,7 @@ static CGFloat allW;//整个图标的宽度
         lbl.font=[UIFont systemFontOfSize:12];
         lbl.textAlignment=NSTextAlignmentCenter;
         [self.xLabels addObject:lbl];
-        NSValue *pointObj=[self.pointArray lastObject];
+        NSValue *pointObj=[self.AllLinePointsArray[0] lastObject];
         CGPoint pointRestored=[pointObj CGPointValue];
         CGFloat maxX=pointRestored.x;
         int maxValueX=(int)maxX;
@@ -136,8 +136,10 @@ static CGFloat allW;//整个图标的宽度
 }
 #pragma mark - 画折线
 -(void) drawFoldLineWithLineChart{
+    int index=0;
+    for(NSMutableArray *pointArray in self.AllLinePointsArray){
     UIBezierPath *path=[UIBezierPath bezierPath];
-    NSValue *pointObj=[self.pointArray firstObject];
+    NSValue *pointObj=[pointArray firstObject];
     CGPoint pointRestored=[pointObj CGPointValue];
     CGFloat xPoint=pointRestored.x;
     CGFloat yPoint=pointRestored.y;
@@ -147,7 +149,7 @@ static CGFloat allW;//整个图标的宽度
         [path moveToPoint:CGPointMake(kMargin, kMargin+allH)];
     }else
     {
-        NSValue *MaxPointObj=[self.pointArray lastObject];
+        NSValue *MaxPointObj=[pointArray lastObject];
         CGPoint MaxPointRestored=[MaxPointObj CGPointValue];
         CGFloat maxX=MaxPointRestored.x;
         maxValueX=(int)maxX;
@@ -156,19 +158,19 @@ static CGFloat allW;//整个图标的宽度
         if(maxValueX<=count){
             [path moveToPoint:CGPointMake(kMargin+xPoint*allW/count, kMargin+(1-yPoint/maxY)*allH)];
         }else{
-            for(int i=1;i<self.pointArray.count;i++){
-                NSValue *pointObj=self.pointArray[i];
+            for(int i=1;i<pointArray.count;i++){
+                NSValue *pointObj=pointArray[i];
                 CGPoint pointRestored=[pointObj CGPointValue];
                 if(pointRestored.x>=(maxValueX-count)){
                     [path moveToPoint:CGPointMake(kMargin+(pointRestored.x-(maxValueX-count))*allW/count, kMargin+(1-pointRestored.y/maxY)*allH)];
-                    i=(int)(self.pointArray.count+1);
+                    i=(int)(pointArray.count+1);
                 }
             }
         }
         
     }
-    for(int i=0;i<self.pointArray.count;i++){
-        NSValue *pointObj=self.pointArray[i];
+    for(int i=0;i<pointArray.count;i++){
+        NSValue *pointObj=pointArray[i];
         CGPoint pointRestored=[pointObj CGPointValue];
         if(maxValueX<=count){
             [path addLineToPoint:CGPointMake(kMargin+pointRestored.x*allW/count, kMargin+(1-pointRestored.y/maxY)*allH)];
@@ -178,12 +180,12 @@ static CGFloat allW;//整个图标的宽度
             }
         }
     }
-    if(self.pointArray.count==0){
+    if(pointArray.count==0){
         [path addLineToPoint:CGPointMake(kMargin, kMargin+allH)];
     }
     CAShapeLayer *layer=[[CAShapeLayer alloc] init];
     layer.path=path.CGPath;
-    layer.strokeColor=[UIColor redColor].CGColor;
+    layer.strokeColor=self.colorOfLines[index].CGColor;
     layer.fillColor=[UIColor clearColor].CGColor;
    /* CABasicAnimation *animation=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.fromValue=@(0);
@@ -191,9 +193,10 @@ static CGFloat allW;//整个图标的宽度
     animation.duration=0.5;
     [layer addAnimation:animation forKey:nil];
     animation.fillMode=kCAFillModeForwards;
-    animation.removedOnCompletion=NO;*/
+    animation.removedOnCompletion=NO;*/ //动画效果，在高刷新下不需要
     [self.bgView.layer addSublayer:layer];
-    
+        index++;
+    }
 }
 #pragma mark - 画封闭图形
 -(void)drawClosedQuadrilateralChartWithArray:(NSArray *)points{
@@ -229,7 +232,7 @@ static CGFloat allW;//整个图标的宽度
     [self exchangeXlabels];
 }
 -(void) exchangeXlabels{
-    NSValue *pointObj=[self.pointArray lastObject];
+    NSValue *pointObj=[self.AllLinePointsArray[0] lastObject];
     CGPoint pointRestored=[pointObj CGPointValue];
     CGFloat maxX=pointRestored.x;
     int maxValueX=(int)maxX;
@@ -288,17 +291,26 @@ static CGFloat allW;//整个图标的宽度
     }*/
 }
 #pragma mark - 懒加载
--(NSMutableArray *)pointArray{
-    if(!_pointArray){
-        _pointArray=[NSMutableArray array];
+-(NSMutableArray *)AllLinePointsArray{
+    if(!_AllLinePointsArray){
+        _AllLinePointsArray=[NSMutableArray array];
+        for(int i=0;i<(int)self.countOfLines;i++){
+            [_AllLinePointsArray addObject:[NSMutableArray array]];
+        }
     }
-    return _pointArray;
+    return _AllLinePointsArray;
 }
 -(NSMutableArray *)xLabels{
     if(!_xLabels){
         _xLabels=[NSMutableArray array];
     }
     return _xLabels;
+}
+-(NSMutableArray *)colorOfLines{
+    if(!_colorOfLines){
+        _colorOfLines=[NSMutableArray array];
+    }
+    return _colorOfLines;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

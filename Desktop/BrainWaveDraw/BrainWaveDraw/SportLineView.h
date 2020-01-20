@@ -16,8 +16,10 @@ typedef NS_ENUM(NSUInteger,ChartType) {
 @interface SportLineView : UIView
 @property(nonatomic,copy) NSArray *xValues;
 @property(nonatomic,copy) NSArray *yValues;
-@property(strong,nonatomic)NSMutableArray *pointArray;
+@property(strong,nonatomic)NSMutableArray *AllLinePointsArray;
+@property (nonatomic) NSMutableArray<UIColor *> *colorOfLines;
 @property(nonatomic,assign)bool isShowLine;
+@property NSInteger *countOfLines;
 +(instancetype)lineChartViewWithFrame:(CGRect)frame;
 -(void)drawChartWithLineChart;
 @property(nonatomic,assign) ChartType type;
